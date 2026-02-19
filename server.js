@@ -121,17 +121,8 @@ function serveStatic(reqPath, res) {
 
   fs.readFile(filePath, (error, content) => {
     if (error) {
-      const fallbackPath = path.join(PUBLIC_DIR, 'index.html');
-      fs.readFile(fallbackPath, (fallbackError, fallbackContent) => {
-        if (fallbackError) {
-          res.writeHead(404);
-          res.end('Not found');
-          return;
-        }
-
-        res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.end(fallbackContent);
-      });
+      res.writeHead(404);
+      res.end('Not found');
       return;
     }
 
