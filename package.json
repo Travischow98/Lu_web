@@ -1,0 +1,10 @@
+{
+  "name": "lu-web",
+  "version": "1.0.0",
+  "description": "Golf clothing and accessory store with order management and Excel export",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  }
+}

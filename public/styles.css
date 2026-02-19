@@ -1,0 +1,125 @@
+:root {
+  --green: #1f3a2f;
+  --cream: #f7f1e8;
+  --tan: #d8c3a5;
+  --black: #151515;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--black);
+}
+
+.hero {
+  min-height: 50vh;
+  color: var(--white);
+  background: linear-gradient(145deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.65)),
+    url("https://images.unsplash.com/photo-1592919505780-303950717480?auto=format&fit=crop&w=1600&q=80") center/cover;
+  padding: 1.5rem 3rem 4rem;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+nav h1 {
+  margin-right: auto;
+  letter-spacing: 0.18rem;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero-content {
+  margin-top: 5rem;
+  max-width: 550px;
+}
+
+.hero-content h2 {
+  font-size: 2.6rem;
+  margin: 0.5rem 0;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+  color: var(--tan);
+}
+
+.section {
+  padding: 2.5rem 3rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1rem;
+}
+
+.product-card {
+  background: var(--white);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.08);
+}
+
+.product-card h4 {
+  margin: 0;
+}
+
+.product-card button,
+#checkoutForm button,
+#refreshOrders {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--green);
+  color: var(--white);
+  cursor: pointer;
+  margin-top: 0.75rem;
+  font-weight: 600;
+}
+
+#checkoutForm {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 420px;
+}
+
+#checkoutForm input {
+  padding: 0.75rem;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+}
+
+.owner {
+  background: #eee4d5;
+}
+
+.export {
+  display: inline-block;
+  margin: 0.75rem 0 1rem;
+  color: var(--green);
+  font-weight: 700;
+}
+
+.order-row {
+  background: var(--white);
+  border-left: 4px solid var(--green);
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
