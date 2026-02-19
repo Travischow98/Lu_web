@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lu Links Golf</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav>
+        <h1>LU LINKS</h1>
+        <a href="#shop">Shop</a>
+        <a href="#checkout">Checkout</a>
+        <a href="#owner">Owner</a>
+      </nav>
+      <div class="hero-content">
+        <p class="eyebrow">Premium Golf Apparel</p>
+        <h2>Classic Course Style,<br />Modern Street Energy.</h2>
+        <p>Inspired by the playful luxury look of modern golf culture.</p>
+      </div>
+    </header>
+
+    <main>
+      <section id="shop" class="section">
+        <h3>Featured Products</h3>
+        <div id="products" class="product-grid"></div>
+      </section>
+
+      <section id="checkout" class="section checkout">
+        <h3>Checkout</h3>
+        <div id="cartItems"></div>
+        <p class="total">Total: $<span id="cartTotal">0</span></p>
+
+        <form id="checkoutForm">
+          <input type="text" id="customerName" placeholder="Full Name" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <input type="tel" id="phone" placeholder="Phone Number" required />
+          <button type="submit">Place Order</button>
+        </form>
+        <p id="statusMessage"></p>
+      </section>
+
+      <section id="owner" class="section owner">
+        <h3>Owner Dashboard</h3>
+        <p>Total Orders: <strong id="orderCount">0</strong></p>
+        <button id="refreshOrders">Refresh Orders</button>
+        <a class="export" href="/api/orders/export">Download Excel Sheet</a>
+        <div id="ordersTable"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
